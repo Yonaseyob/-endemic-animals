@@ -8,12 +8,57 @@
     <title>Document</title>
 </head>
 <body>
-    <h1 class="heading">World's Endemic Animals</h1>
-
-    <div class="username">User Name
-        <input type="text">
+    <h1 class = "heading">World's Endemic Animals</h1>
+    <div>
+        <h2 class = "welcome-text">Welcome</h2> 
     </div>
-    <div class="quesion-area">Quesions</div>
+
+    <div class="welcome-area"> User Name
+        <input class = "userName">
+        
+        <button onclick="welcome()">SUBMIT</button>
+        
+        
+    </div>
+    <div class = "quiz-area">
+        Q1: Which one of the followin animals is endemic to China?<br>
+        <input type="radio" name="question1">Pygmy Three-Toed Sloth<br>
+        <input type="radio" name="question1" id="correct1">Giant Panda<br>
+        <input type="radio" name="question1">Poisen Dart Frog<br>
+        <button class="submit" onclick="submit(1)">SUBMIT</button>
+    </div>
+
+    <div class = "quiz-area">
+        Q2: Which one of the followin animals is endemic to Costarica?<br>
+        <input type="radio" name="question2">Giant Panda<br>
+        <input type="radio" name="question2">Pygmy Three-Toed Sloth<br>
+        <input type="radio" name="question2" id="correct2">Poisen Dart Frog<br>
+        <button class="submit" onclick="submit(2)">SUBMIT</button>
+    </div>
+
+    <div class = "quiz-area">
+        Q3: Which one of the followin animals is endemic to China?<br>
+        <input type="radio" name="question3">Pygmy Three-Toed Sloth<br>
+        <input type="radio" name="question3" id="correct">Giant Panda<br>
+        <input type="radio" name="question3">Poisen Dart Frog<br>
+        <button class="submit" onclick="submit(3)">SUBMIT</button>
+    </div>
+
+    <div class = "quiz-area">
+        Q4: Which one of the followin animals is endemic to China?<br>
+        <input type="radio" name="question4">Pygmy Three-Toed Sloth<br>
+        <input type="radio" name="question4" id="correct">Giant Panda<br>
+        <input type="radio" name="question4">Poisen Dart Frog<br>
+        <button class="submit" onclick="submit(4)">SUBMIT</button>
+    </div>
+
+    <div class="quiz-area">
+        Q5: Which one of the followin animals is endemic to China?<br>
+        <input type="radio" name="question5">Pygmy Three-Toed Sloth<br>
+        <input type="radio" name="question5" id="correct">Giant Panda<br>
+        <input type="radio" name="question5">Poisen Dart Frog<br>
+        <button class="submit" onclick="submit(5)">SUBMIT</button>
+    </div>
 
     <div class="score-area">Score</div>
 
