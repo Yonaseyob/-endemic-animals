@@ -50,12 +50,12 @@ body {
 }
 
 .score-area {
-    font-size: 1.5rem;
+    font-size: 1rem;
     box-sizing: border-box;
     border: 3px solid black;
     border-radius: 10px;
     width: 50%;
-    height: 10vh;
+    height: 40vh;
     max-height: 450px;
     max-width: 830px;
     margin-left: auto;
@@ -67,4 +67,6 @@ body {
 
 }
 
+
+    
 
