@@ -20,60 +20,27 @@
         
         
     </div>
-    <p>Question <span id="question-count">1</span>/<span id="quiz-length">10</span></p>
-<div id="quiz-container">
-
-  
     
+    <p>Question <span id="question-count">1</span>/<span id="quiz-length">5</span></p>
+
+<div id="quiz-container">
+    <p>${quiz.question}</p><hr>
+        <input type="radio" name=${quiz.option1}>${quiz.option1}<br>
+        <input type="radio" name=${quiz.option2}>${quiz.option2}<br>
+        <input type="radio" name=${quiz.option3}>${quiz.option3}<br>
+        <input type="radio" name=${quiz.option4}>${quiz.option4}<br>
+        <button class="next" onclick="next()">NEXT</button>
 </div>
-   <!--  <div class = "quiz-area">
-        <p>Q1: Which one of the followin animals is endemic to China?</p><hr>
-        <input type="radio" name="question1">Pygmy Three-Toed Sloth<br>
-        <input type="radio" name="question1" id="correct1">Giant Panda<br>
-        <input type="radio" name="question1">Poisen Dart Frog<br>
-        <button class="next" onclick="next(1)">NEXT</button>
-    </div>
 
-    <div class = "quiz-area">
-        <p>Q2: Which one of the followin animals is endemic to Costarica?</p><hr>
-        <input type="radio" name="question2">Sclater's Monkey<br>
-        <input type="radio" name="question2">Pygmy Three-Toed Sloth<br>
-        <input type="radio" name="question2" id="correct2">Poisen Dart Frog<br>
-        <button class="next" onclick="next(2)">NEXT</button>
-    </div>
 
-    <div class = "quiz-area">
-        <p>Q3: Which one of the followin animals is endemic to USA?</p><hr>
-        <input type="radio" name="question3">Patagonian Mara<br>
-        <input type="radio" name="question3" id="correct3">Glacier Bear<br>
-        <input type="radio" name="question3">Wilson's Beird of Paradise<br>
-        <button class="next" onclick="next(3)">NEXT</button>
-    </div>
-
-    <div class = "quiz-area">
-        <p>Q4: Which one of the followin animals is endemic to Nigeria?</p><hr>
-        <input type="radio" name="question4">Pygmy Three-Toed Sloth<br>
-        <input type="radio" name="question4" id="correct4">Sclater's Monkey<br>
-        <input type="radio" name="question4">Poisen Dart Frog<br>
-        <button class="next" onclick="next(4)">NEXT</button>
-    </div>
-
-    <div class="quiz-area">
-        <p>Q5: Which one of the followin animals is endemic to Argentina?</p><hr>
-        <input type="radio" name="question5">Wilson's Beird of Paradise<br>
-        <input type="radio" name="question5" id="correct5">Patagonian Mara<br>
-        <input type="radio" name="question5">Sclater's Monkey<br>
-        <button onclick="score()">SUBMIT</button>
-    </div> -->
-
-    <div class="score-area">
+ <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
-        <div class="feedback">Feed Back</div>
+        
 
-    </div>
+</div>
 
-    
+<div class="feed-back">Feed Back</div>    
 
 
     <script src="assets/js/script.js"></script>
