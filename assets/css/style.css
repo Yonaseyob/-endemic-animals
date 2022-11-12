@@ -28,7 +28,7 @@ body {
 
 }
 
-.quiz-area {
+.quiz-box {
     box-sizing: border-box;
     border: 3px solid black;
     border-radius: 10px;
@@ -41,12 +41,6 @@ body {
     padding: 2%;
     text-align: left;
     background-color: aliceblue;
-    
-    
-}
-.quiz-area button {
-    margin-top: 20px;
-    background-color: rgb(183, 171, 224);
     
 }
 

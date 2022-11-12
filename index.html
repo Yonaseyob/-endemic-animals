@@ -16,22 +16,33 @@
     <div class="welcome-area"> User Name
         <input class = "userName">
         
-        <button onclick="welcome()">SUBMIT</button>
+        <button onclick="welcome()">START</button>
         
         
     </div>
     
     <p>Question <span id="question-count">1</span>/<span id="quiz-length">5</span></p>
 
-<div id="quiz-container">
-    <p>${quiz.question}</p><hr>
-        <input type="radio" name=${quiz.option1}>${quiz.option1}<br>
-        <input type="radio" name=${quiz.option2}>${quiz.option2}<br>
-        <input type="radio" name=${quiz.option3}>${quiz.option3}<br>
-        <input type="radio" name=${quiz.option4}>${quiz.option4}<br>
-        <button class="next" onclick="next()">NEXT</button>
-</div>
-
+    <div class="quiz-box" id="quiz">
+        <div class="quiz-header">
+           <h2 id="question">Question text</h2>
+           <ul>
+                <li>
+                    <input type="radio" name="answer" id="a" class="answer">
+                    <label for="a" id="a_text">Question</label>
+               </li>
+               <li>
+                     <input type="radio" name="answer" id="b" class="answer">
+                     <label for="b" id="b_text">Question</label>
+                </li>
+                <li>
+                     <input type="radio" name="answer" id="c" class="answer">
+                     <label for="c" id="c_text">Question</label>
+        
+            </ul>
+        </div>
+        <button id="submit">Submit</button>
+        </div>   
 
  <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
@@ -40,8 +51,7 @@
 
 </div>
 
-<div class="feed-back">Feed Back</div>    
-
+    
 
     <script src="assets/js/script.js"></script>
     
