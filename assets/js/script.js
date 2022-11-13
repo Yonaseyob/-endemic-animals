@@ -122,7 +122,7 @@ submit.addEventListener('click', () => {
 
 });
     
-//tracking corecct and wrong answers;
+//tracking correct and wrong answers;
 function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);
