@@ -1,7 +1,7 @@
-
+// defining question data;
 const quizData = [
     {
-        question: "Which one of the followin animals is endemic to China??",
+        question: "Which one of the followin animals is endemic to China?",
         a: "Three-Toed Sloth",
         b: "Giant Panda",
         c: "Poisen Dart Frog",
@@ -37,6 +37,7 @@ const quizData = [
     },
 ];
 
+// defining variables;
 const quiz = document.getElementById('quiz');
 const answerElements = document.querySelectorAll('.answer');
 const questionElement = document.getElementById('question' );
@@ -45,6 +46,8 @@ const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const submit = document.getElementById('submit');
 
+
+// username input value:
 function welcome() {
 
     let userName = document.querySelector(".userName");
@@ -56,7 +59,7 @@ function welcome() {
         welcomeArea.style.display = "none";
         
     }
-
+ // display questions:
 let currentQuiz = 0;
 let score = 0;
 
@@ -71,6 +74,7 @@ b_text.innerText = currentQuizData.b;
 c_text.innerText = currentQuizData.c;
 }
 
+// geting the answer checked;
 function deselectAnswers(){
     answerElements.forEach(answerEl => answerEl.checked = false);
     }
@@ -88,15 +92,18 @@ function getSelected(){
     return answer;
 }
 
+//compering answers according to question data;
 submit.addEventListener('click', () => {
     const answer = getSelected();
     
     if(answer){
       if(answer === quizData[currentQuiz] .correct){
         score ++;
+        alert("good job!");
 
         incrementScore();
       }else {
+        
         incrementWrongAnswer();
 
       }
@@ -108,13 +115,14 @@ submit.addEventListener('click', () => {
       }
 
        else{
-        quiz.innerHTML = `<h2>You answered corectly at ${score}/${quizData.length} questions</h2>
+        quiz.innerHTML = `<h2>Your correct answer ${score}/${quizData.length} questions</h2>
         <button onclick = "location.reload()">Reload</button>`;
        }
     }
 
 });
     
+//tracking corecct and wrong answers;
 function incrementScore() {
 
     let oldScore = parseInt(document.getElementById("score").innerText);

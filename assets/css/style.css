@@ -61,21 +61,17 @@ body {
     
 
 }
-.feed-back {
-    font-size: 1rem;
-    box-sizing: border-box;
-    border: 3px solid black;
-    border-radius: 10px;
-    width: 50%;
-    height: 15vh;
-    max-height: 450px;
-    max-width: 830px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 2%;
-    text-align: left;
-    background-color: rgb(166, 192, 225); 
-}
+
+
+
+@media (max-width: 300px) {
+    .welcome-area {
+        padding: 10% 0;
+        width: 100%;
+    }
+    }
+
+
 
 
     
