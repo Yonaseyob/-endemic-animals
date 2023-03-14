@@ -38,14 +38,25 @@ const quizData = [
 ];
 
 // defining variables;
-const quiz = document.getElementById('quiz');
+const quiz = document.getElementById('quiz-box');
 const answerElements = document.querySelectorAll('.answer');
 const questionElement = document.getElementById('question' );
 const a_text = document.getElementById('a_text');
 const b_text = document.getElementById('b_text');
 const c_text = document.getElementById('c_text');
 const submit = document.getElementById('submit');
+const startButton = document.getElementById('start-btn');
+const questionContainerElement = document.getElementById("quiz-box");
 
+
+ startButton.addEventListener('click', startGame);
+// quiz start:
+ function startGame() {
+ console.log('Started');
+ startButton.classList.add('hide');
+ questionContainerElement.classList.remove('hide');
+ loadQuiz();
+ }
 
 // username input value:
 function welcome() {
@@ -67,7 +78,6 @@ loadQuiz();
 
 function loadQuiz(){
 const currentQuizData = quizData[currentQuiz];
-
 questionElement.innerText = currentQuizData.question;
 a_text.innerText = currentQuizData.a;
 b_text.innerText = currentQuizData.b;
