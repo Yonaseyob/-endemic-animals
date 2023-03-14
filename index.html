@@ -8,23 +8,31 @@
     <title>Quiz project</title>
 </head>
 <body>
+    <!--header-->
+    <header>
     <h1 class = "heading">World's Endemic Animals Quiz</h1>
+    </header>
+
+    <!--welcome area-->
     <div>
         <h2 class = "welcome-text">Welcome</h2> 
     </div>
 
+    <!--username input and quiz start button-->
     <div class="welcome-area"> User Name
-        <input class = "userName">
+        <input class = "userName" placeholder="Optional">
         
-        <button onclick="welcome()">START</button>
-        
-        
+        <button id = "start-btn" onclick="welcome()">START</button>
     </div>
-    
-    
-    <div class="quiz-box" id="quiz">
+
+    <!--quiz container-->
+    <div id="quiz-box" class="hide">
+
         <div class="quiz-header">
            <h3 id="question">Question text</h3>
+        </div>
+
+        <div class="answers-list">
            <ul>
                 <li>
                     <input type="radio" name="answer" id="a" class="answer">
@@ -37,21 +45,23 @@
                 <li>
                      <input type="radio" name="answer" id="c" class="answer">
                      <label for="c" id="c_text">Question</label>
-        
-            </ul>
+           </ul>
         </div>
-        <button id="submit">Submit</button>
-        </div>   
 
- <div class="score-area">
+        <!--answer submition button-->
+        <div>
+        <button id="submit">Submit</button>
+        </div>
+    </div>
+
+    <!--footer area for score progress display-->
+    <footer>   
+    <div class="score-area">
         <p class="scores">Correct Answers <span id="score">0</span></p>
         <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
+    </div>
+    </footer>
         
-
-</div>
-
-    
-
     <script src="assets/js/script.js"></script>
     
 </body>
